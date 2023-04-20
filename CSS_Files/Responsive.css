@@ -1,0 +1,130 @@
+@media screen and (max-width:1200px) {
+    /* --------------- Header Styling Start ---------------- */
+.header .navigation-bar .navbar-right-side-container .menu{
+        display: block;
+    }
+    .header .navigation-bar{
+        position: relative;
+    }
+    .header .navigation-bar .navbar-list{
+        background:#fff !important;
+        box-shadow: 0px 0px 3px grey;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 1rem 2rem;
+        width: 350px;
+        min-height:100vh;
+        z-index: 999;
+        opacity: 1;
+        transform: translateX(-100%);
+        transition: all 0.8s ease-in-out;
+    }
+    .header .navigation-bar .navbar-list.active{
+        transform: translateX(0);
+    }
+    .header .navbar-list .responsive-top-box{
+        display: block !important;
+    }
+    .header .navbar-list .responsive-top-box .profile{
+        width: 6.5rem;
+    height: 6.5rem;
+    border-radius: 50%;
+    border: 5px solid var(--light);
+    box-shadow: 0px 0px 3px grey
+    }
+    .header .navbar-list .responsive-top-box .profile img{
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+    }
+    .header .navbar-list .responsive-top-box .close-icon{
+        width: 3.8rem;
+    height: 3.8rem;
+    border-radius: 50%;
+    background:#fff;
+    box-shadow:5px 5px 15px #D1D9E6, 
+               -5px -5px 15px #ffffff;
+    text-align: center;
+    transition: all 0.6s ease-in-out;
+    }
+    .header .navbar-list .responsive-top-box .close-icon:hover{
+        transform: scale(1.1);
+    }
+    .header .navbar-list .responsive-top-box .close-icon i{
+        font-size: 1.6rem;
+    margin-top: 1rem;
+    color: #ff014f;
+    }
+    .header .navbar-list .responsive-top-box .profile-desc{
+        font-size: 1.2rem;
+        width: 300px;
+        text-align: justify;
+        color:#6c757d;
+        margin-bottom: 3rem;
+    }
+    .header .navigation-bar .navbar-list .navbar-link{
+        margin-bottom: 1rem;
+        color: #6c757d !important;
+    }
+    .header .navigation-bar .navbar-list .navbar-link:hover{
+        color: #ff014f !important;
+    }
+    .header .navbar-list .social-icons{
+        margin-top: 4rem;
+        display: flex;
+        flex-direction: column;
+    
+        
+    }
+    .header .navbar-list .social-icons .icons{
+        display: flex;
+        gap: 3rem;
+        margin-top: 4rem;
+    }
+    .header .navbar-list .social-icons a{
+        display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    line-height: 21px;
+    border-radius: 6px;
+    background:linear-gradient(145deg, #e2e8ec, #ffffff);
+    box-shadow:5px 5px 15px #D1D9E6, 
+               -5px -5px 15px #ffffff;
+    transition: all 0.6s ease-in-out;
+    }
+    .header .navbar-list .social-icons a:hover{
+        transform: translateY(-6px);
+        background-color: #bf3a30;
+     background-image: linear-gradient(315deg, #bf3a30 0%, #864ba2 74%);
+        color: var(--light);
+    }
+    .header .navbar-list .social-icons a:hover i{
+        color: #fff !important;
+    }
+    .header .navbar-list .social-icons a i{
+        font-size: 2rem;
+        color: #212529;
+        transition: all 0.23s ease-in-out;
+    }
+    /* --------------- Header Styling End ---------------- */
+    
+}
+
+
+@media screen and (max-width:768px) {
+    /* --------------- Header Styling Start ---------------- */
+    .header .navigation-bar{
+        padding: 1.5rem 3rem !important;
+    }
+    /* --------------- Header Styling End ---------------- */
+}
+@media screen and (max-width:576px) {
+    /* --------------- Header Styling Start ---------------- */
+    .header .navigation-bar{
+        padding: 1.5rem 8px !important;
+    }
+    /* --------------- Header Styling End ---------------- */
+}

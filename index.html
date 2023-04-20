@@ -26,8 +26,11 @@
     <!-- ************** Custom CSS Links *************** -->
     <link rel="stylesheet" href="/CSS_Files/index.css">
     <link rel="stylesheet" href="/CSS_Files/Responsive.css">
+
+    <!-- ---************* Custom JS Link ************--- -->
+    <script src="/JS_Files/index.js" defer></script>
   </head>
-  <body>
+  <body  id="body">
     <!-- ---***********--- Header Start ---*********--- -->
     <header class="header">
       <nav class="navigation-bar">
@@ -40,6 +43,14 @@
         </div>
 
        <ul class="navbar-list">
+        <div class="responsive-top-box ">
+          <div class="profile-and-icon-container d-flex align-items-center justify-content-between mb-5">
+            <div class="profile"><a href="#"><img src="/Images/pic.jpeg" alt="profile-img" class="img-fluid"></a></div>
+            <div class="close-icon" id="close"><i class="fas fa-times"></i></div>
+          </div>
+          <p class="profile-desc">Creative and self-starting Front-End Developer with 5 years experience building stable eCommerce websites and apps in fast-paced, collaborative environments</p>
+        </div>
+        <hr>
         <li class="navbar-item"><a href="#" class="navbar-link">I Am</a></li>
         <li class="navbar-item"><a href="#" class="navbar-link">My Experience</a></li>
         <li class="navbar-item"><a href="#" class="navbar-link">Education</a></li>
@@ -47,12 +58,20 @@
         <li class="navbar-item"><a href="#" class="navbar-link">Portfolio</a></li>
         <li class="navbar-item"><a href="#" class="navbar-link">Certificates</a></li>
         <li class="navbar-item"><a href="#" class="navbar-link">Contacts</a></li>
+        <hr>
+        <div class="social-icons mb-5">
+          <h3 class="text-uppercase text-secondary fs-1">Find With Me</h3>
+          <div class="icons mb-3">
+            <a href="https://web.facebook.com/profile.php?id=100015863792392"><i class="fab fa-facebook-f"></i></a> 
+            <a href="https://twitter.com/Hakimul27928765"><i class="fab fa-twitter"></i></a> 
+            <a href="https://www.linkedin.com/in/hakim-ullah-78445225b/"><i class="fab fa-linkedin-in"></i></a></div> 
+        </div>
+        <hr>
        </ul>
        <div class="navbar-right-side-container">
          <a href="#" class="btn hire-me-btn">Hire Me</a>
-        
         <div class="menu">
-          <i class="fas fa-bars"></i>
+          <i class="fas fa-bars" id="menu"></i>
         </div>
        </div>
 
