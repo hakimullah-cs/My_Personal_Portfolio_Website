@@ -9,4 +9,5 @@ menuicon.addEventListener("click",(e)=>{
 closeicon.addEventListener("click",(e)=>{
    menulist.classList.remove("active");
 });
+
 //---/**********/Header Functonality JSCode End /**************/--- */

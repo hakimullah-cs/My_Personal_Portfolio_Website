@@ -69,7 +69,7 @@
         color: #6c757d !important;
     }
     .header .navigation-bar .navbar-list .navbar-link:hover{
-        color: #ff014f !important;
+        color:#ff014f !important;
     }
     .header .navbar-list .social-icons{
         margin-top: 4rem;
@@ -109,6 +109,8 @@
         color: #212529;
         transition: all 0.23s ease-in-out;
     }
+
+   
     /* --------------- Header Styling End ---------------- */
     
 }
@@ -126,5 +128,17 @@
     .header .navigation-bar{
         padding: 1.5rem 8px !important;
     }
+    .header .navigation-bar .hire-me-btn{
+        padding: 10px 18px;    }
+  
     /* --------------- Header Styling End ---------------- */
+    .hero .left-first-container .hero-section-descr h1{
+        font-size: 4rem;
+        font-weight: bold;
+        margin-bottom: 2rem;
+    }
+    .hero{
+        
+        margin-top: 1rem;
+    }
 }
