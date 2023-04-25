@@ -10,4 +10,16 @@ closeicon.addEventListener("click",(e)=>{
    menulist.classList.remove("active");
 });
 
+// ******* Sticky Header Start ***********
+let header=document.querySelector(".header");
+window.addEventListener("scroll",(e)=>{
+    if(window.pageYOffset>=160){
+header.classList.add("sticky");
+    }
+    else{
+        header.classList.remove("sticky");
+    }
+});
+
+// ******* Sticky Header End ***********
 //---/**********/Header Functonality JSCode End /**************/--- */
