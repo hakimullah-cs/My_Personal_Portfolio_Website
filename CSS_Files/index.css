@@ -43,14 +43,23 @@
 html{
     scroll-behavior: smooth;
     font-size: 10px;
-    overflow-x: hidden;
+    overflow-x:hidden;
+}
+html.stop-scroll{
+    overflow-y: hidden;
 }
 body{
     font-family: 'Open Sans', sans-serif;
     font-family: 'Poppins', sans-serif;
     font-family: 'Roboto', sans-serif;
+    
 }
 
+
+
+body main.show{
+    filter: blur(5px);
+}
 /* ---//////---- Header Styling Start ---//////---- */
 
 .header{
@@ -312,7 +321,14 @@ background-image: linear-gradient(315deg, #bf3a30 0%, #864ba2 74%);
    box-shadow: 5px 5px 15px #D1D9E6, 
                -5px -5px 15px #ffffff;
    border-radius: 9px;
-   transition: all 0.6s ease-in-out;
+   transition: all 1s ease-in-out;
+   transform: translateX(120%);
+}
+.experience .experience-cards-container .experience-card:nth-of-type(even){
+    transform: translateX(-120%);
+}
+.experience .experience-cards-container .experience-card.show{
+    transform: translate(0);
 }
 .experience .experience-cards-container .experience-card:hover{
     transform: translateY(-5px);
