@@ -359,3 +359,70 @@ background-image: linear-gradient(315deg, #bf3a30 0%, #864ba2 74%);
     color: var(--light);
 }
 /* ---//////---- Experience Styling End ---//////---- */
+
+
+/* ---//////---- Education Styling Start ---//////---- */
+.education{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6.5rem;
+    padding: 10rem 0 4rem 0;
+}
+.education .section-title-container p{
+    color: #ff014f;
+    font-size: 2rem;
+    font-weight: lighter;
+    margin-bottom: 0;
+    text-align: center !important;
+}
+.education .section-title-container h1{
+    color: var(--dark);
+    font-size: 6rem;
+    font-weight: bold;
+}
+
+.education .education-cards-container .education-card{
+    background:var(--light);
+   box-shadow: 5px 5px 15px #D1D9E6, 
+               -5px -5px 15px #ffffff;
+   border-radius: 9px;
+   transition: all 1s ease-in-out;
+   /* transform: translateX(120%); */
+}
+.education .education-cards-container .education-card:nth-of-type(even){
+    /* transform: translateX(-120%); */
+}
+.education .education-cards-container .education-card.show{
+    /* transform: translate(0); */
+}
+.education .education-cards-container .education-card:hover{
+    transform: translateY(-5px);
+}
+.education .education-cards-container .education-card .text-container .duration{
+    background:#ff014f;
+    margin-bottom: 1.5rem;
+}
+.education .education-cards-container .contact-btn{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color:#ff014f;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 14px 25px;
+    line-height: 21px;
+    border-radius: 6px;
+    background:linear-gradient(145deg, #e2e8ec, #ffffff);
+    box-shadow:5px 5px 15px #D1D9E6, 
+               -5px -5px 15px #ffffff;
+    transition: all 0.6s ease-in-out;
+}
+.education .education-cards-container .contact-btn:hover{
+    transform: translateY(-6px);
+    background-color: #bf3a30;
+ background-image: linear-gradient(315deg, #bf3a30 0%, #864ba2 74%);
+    color: var(--light);
+}
+/* ---//////---- Education Styling End ---//////---- */

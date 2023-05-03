@@ -44,7 +44,7 @@ header.classList.add("sticky");
 
 // /*********./ Main Section Functionality Start /***********/ */ */
 // --------------- Experience Section Start --------------
-const boxes=document.querySelectorAll(".experience-card");
+const boxes=document.querySelectorAll(".experience-cards-container .experience-card");
 console.log(boxes);
 window.addEventListener("scroll",checkboxes);
 checkboxes();

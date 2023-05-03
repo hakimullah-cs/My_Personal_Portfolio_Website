@@ -142,5 +142,13 @@
         margin-top: 1rem;
         padding-bottom: 3rem;
     }
+    .experience .section-title-container h1{
+        font-size: 4rem;
+        margin-top: 1rem;
+    }
+    .education .section-title-container h1{
+        font-size: 4rem;
+        margin-top: 1rem;
+    }
    
 }
