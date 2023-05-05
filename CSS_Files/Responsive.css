@@ -150,5 +150,16 @@
         font-size: 4rem;
         margin-top: 1rem;
     }
+    .contact .section-title-container h1{
+        font-size: 4rem;
+        margin-top: 1rem;
+    }
+    .contact .section-title-container h1{
+        font-size: 4rem;
+        margin-top: 1rem;
+    }
+    .contact .contact-right-side-container input,textarea{
+        padding: 1.4rem!important;
+    }
    
 }

@@ -426,3 +426,117 @@ background-image: linear-gradient(315deg, #bf3a30 0%, #864ba2 74%);
     color: var(--light);
 }
 /* ---//////---- Education Styling End ---//////---- */
+
+
+
+
+
+
+/* ////////--------- Contact Us Styling Start ----------/////////--- */
+.contact{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6.5rem;
+    padding: 10rem 0 4rem 0;
+}
+.contact .section-title-container p{
+    color: #ff014f;
+    font-size: 2rem;
+    font-weight: lighter;
+    margin-bottom: 0.6rem;
+    text-align: center !important;
+}
+.contact .section-title-container h1{
+    color: var(--dark);
+    font-size: 6rem;
+    font-weight: bold;
+}
+.contact .contact-left-side-container{
+    background: linear-gradient(145deg, #e2e8ec, #ffffff); 
+    box-shadow:5px 5px 15px #D1D9E6, 
+               -5px -5px 15px #ffffff;
+    padding: 2rem;
+    border-radius: 6px;
+            
+            }
+    .contact .contact-left-side-container img{
+        border-radius: 6px;
+        width: 100%;
+    }
+    .contact .contact-left-side-container .contact-content .name{
+        font-size: 3.5rem;
+        color: var(--gray-dark);
+        margin-bottom: 1rem;
+    }
+    .contact .contact-left-side-container .contact-content .job-desc{
+        font-size: 1.5rem;
+        font-weight: lighter;
+        color: var(--gray);
+        margin-bottom: 1rem;
+    }
+    .contact .contact-left-side-container .contact-content .self-description{
+        font-size: 1.55rem;
+        text-align: justify;
+        color: var(--secondary);
+        margin-bottom: 1rem;
+        /* font-weight: lighter; */
+    }
+    .contact .contact-left-side-container .contact-content .contact-social-links a{
+        display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color:var(--dark);
+    font-size: 13px;
+    margin-right: 2rem;
+    font-weight: bold;
+    padding: 14px 25px;
+    line-height: 21px;
+    border-radius: 6px;
+    background:linear-gradient(145deg, #e2e8ec, #ffffff);
+    box-shadow:5px 5px 15px #D1D9E6, 
+               -5px -5px 15px #ffffff;
+    transition: all 0.6s ease-in-out;
+    }
+    .contact .contact-left-side-container .contact-content a:hover{
+        transform: translateY(-6px);
+        background-color: #bf3a30;
+     background-image: linear-gradient(315deg, #bf3a30 0%, #864ba2 74%);
+        color: var(--light);
+    }
+
+    .contact .contact-right-side-container{
+        background: linear-gradient(145deg, #e2e8ec, #ffffff); 
+        box-shadow:5px 5px 15px #D1D9E6, 
+                   -5px -5px 15px #ffffff;
+        padding: 2rem;
+        border-radius: 6px;
+                
+                }
+    .contact .contact-right-side-container input,textarea{
+        border: none;
+        outline: none;
+        padding: 2rem!important;
+        box-shadow: 0px 0px 1px grey;
+    }
+    .contact .contact-right-side-container input::placeholder{
+        font-size: 1.6rem;
+        color: #343a40;
+        font-weight: lighter;
+    }
+    .contact .contact-right-side-container button{
+        background:var(--wc-subtext) !;
+        padding: 1.5rem;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        background: linear-gradient(145deg, #e2e8ec, #ffffff) !important;  
+        transition: all 0.6s ease-in-out;
+    }
+    .contact .contact-right-side-container button:hover{
+        transform: translateY(-6px);
+        background-color: #bf3a30;
+     background-image: linear-gradient(315deg, #bf3a30 0%, #864ba2 74%) !important;
+        color: var(--light);
+    }
+/* ////////--------- Contact Us Styling End ----------/////////--- */
