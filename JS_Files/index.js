@@ -16,9 +16,9 @@ closeicon.addEventListener("click",(e)=>{
    html.classList.remove("stop-scroll");
    mainElement.classList.remove("show");
 });
-console.log(html);
+// console.log(html);
 
-console.log(navlinks);
+// console.log(navlinks);
 navlinks.forEach((e)=>{
 e.addEventListener("click",(ele)=>{
     html.classList.remove("stop-scroll");
@@ -43,21 +43,53 @@ header.classList.add("sticky");
 
 
 // /*********./ Main Section Functionality Start /***********/ */ */
-// --------------- Experience Section Start --------------
-const boxes=document.querySelectorAll(".experience-cards-container .experience-card");
-console.log(boxes);
-window.addEventListener("scroll",checkboxes);
-checkboxes();
-function checkboxes(){
-   boxes.forEach((box)=>{
-if(window.pageYOffset>=600){
-    // alert();
-    box.classList.add("show");
-}else{
-    box.classList.remove("show");
-}
-   });
-}
+// --------------- Resume Section Start --------------
+const tabs=document.querySelectorAll(".tab"),
+      contents=document.querySelectorAll(".content");
 
-// --------------- Experience Section End --------------
+// console.log(tabs);
+tabs.forEach((e, ind)=>{
+    e.addEventListener("click",()=>{
+        // console.log(e.innerHTML)
+        tabs.forEach((tab)=>{
+            tab.classList.remove("active");
+        });
+        e.classList.add("active");
+       contents.forEach((content)=>{
+       content.classList.remove("active");
+       });
+       contents[ind].classList.add("active");
+    });
+});
+
+// --------------- Resume Section End --------------
+
+
+
+// --------------- Portfolio Section Start --------------
+const PortfolioTabs=document.querySelectorAll(".portfolio-tab"),
+      projectCardsContainer=document.querySelectorAll(".project-cards-container");
+console.log(projectCardsContainer);
+
+PortfolioTabs.forEach((ele,ind)=>{
+  ele.addEventListener("click",()=>{
+    PortfolioTabs.forEach((tab)=>{
+    tab.classList.remove("active");
+    });
+    ele.classList.add("active");
+    projectCardsContainer.forEach((container)=>{
+     container.classList.remove("active");
+    });
+    projectCardsContainer[ind].classList.add("active");
+  });
+});
+// --------------- Portfolio Section End --------------
+
+
+// ------------------ Certificates Section Start --------------
+
+// ------------------ Certificates Section End --------------
 // /*********./ Main Section Functionality End /***********/ */ */
+
+
+
