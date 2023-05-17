@@ -45,7 +45,8 @@ header.classList.add("sticky");
 // /*********./ Main Section Functionality Start /***********/ */ */
 // --------------- Resume Section Start --------------
 const tabs=document.querySelectorAll(".tab"),
-      contents=document.querySelectorAll(".content");
+      contents=document.querySelectorAll(".content"),
+      progressbar=document.querySelectorAll(".progress-bar");
 
 // console.log(tabs);
 tabs.forEach((e, ind)=>{
@@ -60,6 +61,12 @@ tabs.forEach((e, ind)=>{
        });
        contents[ind].classList.add("active");
     });
+});
+// console.log(tabs[1].innerHTML);
+tabs[1].addEventListener("click",()=>{
+progressbar.forEach((ele)=>{
+ele.classList.add("active");
+});
 });
 
 // --------------- Resume Section End --------------

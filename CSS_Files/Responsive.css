@@ -130,6 +130,13 @@
     }
     .header .navigation-bar .hire-me-btn{
         padding: 10px 18px;    }
+        .header .navigation-bar .navbar-logo-container .logo{
+            width: 5rem;
+            height: 5rem;
+        }
+        .header .navigation-bar .navbar-logo-container h3{
+            font-size: 1.3rem;
+        }
   
     /* --------------- Header Styling End ---------------- */
     .hero .left-first-container .hero-section-descr h1{
@@ -154,6 +161,12 @@
         font-size: 4rem;
         margin-top: 1rem;
     }
+    .resume .content .content-box .contents{
+        padding: 0 15px;
+       }
+       .resume .content .box::before{
+        left: -25px;
+       }
     .portfolio .section-title-container h1{
         font-size: 4rem;
         margin-top: 1rem;

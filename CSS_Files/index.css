@@ -456,13 +456,144 @@ background-image: linear-gradient(315deg, #bf3a30 0%, #864ba2 74%);
     opacity: 1;
     z-index: 999;
     transition: all 0.23s ease-in-out;
+    animation: moving 0.5s ease;
 }
 .resume .content-container .content{
     display: none;
+    animation: moving 0.5s ease;
 }
 .resume .content-container .content.active{
     display: block;
 }
+
+               /* ---- Portfolio Education Container styling Start----- */
+               .resume .content .content-box .title p{
+                color: #ff014f;
+                font-size: 1.8rem;
+                margin-bottom: 0px;
+               }
+               .resume .content .content-box .title h3{
+                color:var(--dark);
+                font-size: 4rem;
+               }
+               .resume .content .content-box .contents{
+                border-left: 5px solid #e2e8ec;
+                padding: 0px 30px;
+               }
+               .resume .content .box{
+                position: relative;
+                padding: 2.5rem 2rem !important;
+                border-radius: 6px;
+                background:linear-gradient(145deg, #e2e8ec, #ffffff);
+                box-shadow:5px 15px #D1D9E6, -5px -5px 15px #ffffff;
+                transition: all 0.4s ease-in-out;
+               }
+               .resume .content .box::before{
+                content: '';
+                width: 1.5rem;
+                height: 1.5rem;
+                border-radius: 50%;
+                box-shadow: 0px 0px 3px grey;
+                opacity: 1;
+                z-index: 999;
+                background:#ff014f;
+                border: 4px solid #D1D9E6;
+                position: absolute;
+                top: 50%;
+                left: -40px;
+               }
+               .resume .content .box:hover{
+            
+                   background-color: #bf3a30;
+                   background-image: linear-gradient(315deg, #bf3a30 0%, #864ba2 74%);
+                   color: var(--light);
+               }
+               
+               .resume .content .box:hover h3{
+                color: var(--light) !important;
+               }
+               .resume .content .box:hover  .right-side span{
+                background: #ff014f !important;
+                color: var(--light);
+               }
+               .resume .content .box .top-text h3{
+                font-size: 2.5rem;
+                color: var(--dark);
+                margin-bottom: 1.5rem;
+                
+               }
+               .resume .content .box .right-side span{
+                padding: 1rem 1.5rem;
+                border-radius: 6px;
+                font-size: 1.3rem;
+                color: #ff014f;
+               }
+               .resume .content .box .bottom-text p{
+                font-size: 1.5rem;
+                text-align:justify;
+               }
+               /* ---- Resume Education Container styling End----- */
+
+               /* ------ Resume Technical Skills Start----- */
+               .resume .container-title p{
+                color: #ff014f;
+               }
+               .resume .container-title h3{
+                font-size: 2.8rem;
+                font-weight: bold;
+                color: var(--dark);
+               }
+               .resume .progress-title .progress{
+                height: 10px;
+                width: 100%;
+                border-radius: 25px;
+                box-shadow: 0px 0px 3px grey;
+                border: 1.5px solid grey;
+                margin-bottom: 40px;
+                overflow: visible;
+                position: relative;
+               }
+               .resume .progress-title .progress .progress-bar{
+                border-radius: 25px;
+                background:linear-gradient(145deg, #fff 0%, #ff014f 100%);
+                transition: all 0.3s ease-in-out;
+                
+               }
+               .resume .progress-title .progress .progress-bar.active{
+                animation: animate-position 1.5s;
+                transition: all 0.3s ease-in;
+               }
+               .resume .progress-title .progress-info img{
+                width: 3rem;
+                margin-bottom: 0.5rem;
+               }
+               .resume .progress-title .progress .progress-value{
+                background:linear-gradient(145deg, #e2e8ec, #ffffff);
+                /* box-shadow:5px 15px #D1D9E6, -5px -5px 15px #ffffff; */
+                box-shadow: 0px 0px 3px grey;
+                color: #ff014f;
+                box-shadow: ;
+                text-align: center;
+                border-radius: 6px;
+                font-size: 1.3rem;
+                width: 50px;
+                height: 20px;
+                position: absolute;
+                top: 9px;
+                right: 3rem;
+               }
+
+
+               @keyframes animate-position {
+                0%{
+                    width: 0%;
+                }
+                100%{
+                    width: 0%;
+                }
+               }
+               
+               /* ------ Resume Technical Skills End----- */
 /* ---////////------ Resume Styling End-------////////----- */
 
 
@@ -533,6 +664,10 @@ background-image: linear-gradient(315deg, #bf3a30 0%, #864ba2 74%);
     background:url(/Images/Projects-SS/three.png);
     background-size: cover;
 }
+.project-img4{
+    background:url(/Images/Projects-SS/four.png);
+    background-size: cover;
+}
 .portfolio .project-btns .project-btn{
     display: inline-block;
     text-decoration: none;
@@ -566,6 +701,8 @@ background-image: linear-gradient(315deg, #bf3a30 0%, #864ba2 74%);
         opacity: 1;
     }
 }
+
+
 
 /* ---////////------ Portfolio Styling End-------////////----- */
 
