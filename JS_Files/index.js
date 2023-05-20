@@ -99,4 +99,12 @@ PortfolioTabs.forEach((ele,ind)=>{
 // /*********./ Main Section Functionality End /***********/ */ */
 
 
+// ------------ Whatsapp link Showing Functionality
+const wicon=document.querySelector(".w-icon");
+
+setTimeout(()=>{
+    wicon.classList.add("active");
+},8000);
+
+
 
