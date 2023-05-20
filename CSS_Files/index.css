@@ -797,60 +797,6 @@ background-image: linear-gradient(315deg, #bf3a30 0%, #864ba2 74%);
 /* ---////////------ Certificate Styling End -------///////////----- */
 
 
-/* ----/////////------ Team Styling Start ----------///////----- */
-.team{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 6.5rem;
-    padding: 10rem 0 4rem 0;
-}
-.team .section-title-container p{
-    color: #ff014f;
-    font-size: 2rem;
-    font-weight: lighter;
-    margin-bottom: 0.6rem;
-    text-align: center !important;
-}
-.team .section-title-container h1{
-    color: var(--dark);
-    font-size: 6rem;
-    font-weight: bold;
-}
-.team .team-box{
-    background:linear-gradient(145deg, #e2e8ec, #ffffff);
-    box-shadow:5px 5px 15px #D1D9E6, 
-               -5px -5px 15px #ffffff;
-    padding:1rem;
-    border-radius: 8px;
-}
-.team .team-box .image{
-    width: 8rem;
-    height: 8rem;
-    border-radius: 50%;
-    border: 5px solid #fff;
-    box-shadow: 0px 0px 3px #eee;
-    margin-bottom: 1rem;
-}
-.team .team-box .image img{
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-}
-.team .team-box .text .name{
-    font-size: 2rem;
-    color: var(--dark);
-    font-weight: bold;
-    margin-bottom: 1rem;
-}
-.team .team-box .text .designation{
-    color: #ff014f;
-    font-size: 1.3rem;
-    text-transform:capitalize;
-}
-/* ----/////////------ Team Styling End ----------///////----- */
-
 
 
 /* ////////--------- Contact Us Styling Start ----------/////////--- */
