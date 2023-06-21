@@ -93,9 +93,78 @@ PortfolioTabs.forEach((ele,ind)=>{
 // --------------- Portfolio Section End --------------
 
 
-// ------------------ Certificates Section Start --------------
+// ------------------ COntact Section Start --------------
+function validation(){
+    // alert("Submitted");
+    // For UserNAme
+    let UserName_correct_way=/^[A-Za-z]+$/;
+    let userName=document.getElementById("name").value;
+    if(userName===""){
+       document.querySelector(".Nameerror").innerHTML="** Please Enter Your Name here???";
+       return false;
+    }
+    if(userName.length<3){
+        document.querySelector(".Nameerror").innerHTML="**Enter Your Name Maximum 3 Character!!";
+       return false;
+    }
+    if(userName.length>20){
+        document.querySelector(".Nameerror").innerHTML="**Enter Your Name Min 20 Characters!!";
+       return false;
+    }
+    if(userName.match(UserName_correct_way)){
+        true;
+    }
+    else{
+        document.querySelector(".error").innerHTML="** Please Enter only Alphabets!!";
+         return false;
+    }
 
-// ------------------ Certificates Section End --------------
+    // For Phone Number
+    let p_Number=document.getElementById("number").value;
+    let No_correct_way=/^[0-9]+$/;
+    if(p_Number==""){
+        document.querySelector(".Numbererror").innerHTML="** Please Enter Number???";
+        return false;
+    }
+    if((p_Number.length<11) || (p_Number.length>16)){
+        document.querySelector(".Numbererror").innerHTML="** Invalid Length!!";
+        return false;
+    }
+
+    //For Email
+    let Email=document.getElementById("email").value;
+    if(Email.indexOf('@')<=0){
+        document.querySelector(".Emailerror").innerHTML="** Invalid @ Position";
+        return false;
+    }
+    if((Email.charAt(Email.length-4)!='.') && (Email.charAt(Email.length-3)!='.')){
+        document.querySelector(".Emailerror").innerHTML="** Invalid Syntyax!!!";
+        return false;
+    }
+
+    // For Subject
+    let subject=document.getElementById("subject").value;
+    let Subject_correct_way=/^[A-Za-z]+$/;
+    // alert(subject);
+    if(subject==""){
+        document.querySelector(".Subjecterror").innerHTML="** Please Enter Subject???";
+        return false;
+    }
+    if(subject.length<=5){
+        document.querySelector(".Subjecterror").innerHTML="** Invalid Length!!!";
+        return false;
+    }
+    if(subject.match(Subject_correct_way)){
+        true;
+    }
+    else{
+        document.querySelector(".Subjecterror").innerHTML="** Only Alphabetical Character Allowed!!!";
+        return false;
+    }
+
+}
+
+// ------------------ COntact Section End --------------
 // /*********./ Main Section Functionality End /***********/ */ */
 
 

@@ -192,7 +192,7 @@ transform: scale(1.1);
 
 
 /* ---//////---- Hero Styling Start ---//////---- */
-.hero{
+/*.hero{
     width: 100%;
     display: flex;
     justify-content: center;
@@ -253,9 +253,7 @@ margin-top: 1.2rem;
     color: var(--dark);
     margin-bottom: 2rem;
 }
-.hero .left-first-container:hover{
-    transform: translateY(-10px);
-}
+
 
 .hero .left-second-container{
     background:var(--light);
@@ -285,60 +283,39 @@ margin-top: 1.2rem;
 background-image: linear-gradient(315deg, #bf3a30 0%, #864ba2 74%);
    color: var(--light);
 }
-.hero .left-second-container:hover{
-    transform: translateY(-10px);
-}
-/* ---//////---- Hero Styling End ---//////---- */
-
-
-
-
-
-/* ---//////---- Experience Styling Start ---//////---- */
-.experience{
+*/
+.home{
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 6.5rem;
-    padding: 10rem 0 4rem 0;
 }
-.experience .section-title-container p{
-    color: #ff014f;
-    font-size: 2rem;
-    font-weight: lighter;
-    margin-bottom: 0;
-    text-align: center !important;
+.home .home-container .left-side{
+    padding-top: 8rem;
 }
-.experience .section-title-container h1{
-    color: var(--dark);
-    font-size: 6rem;
+.home .home-container .top-text{
+    margin-bottom: 5rem;
+}
+.home .home-container .top-text .name-con{
+    font-size: 5rem;
     font-weight: bold;
+    margin-bottom: 3rem;
 }
-
-.experience .experience-cards-container .experience-card{
-    background:var(--light);
-   box-shadow: 5px 5px 15px #D1D9E6, 
-               -5px -5px 15px #ffffff;
-   border-radius: 9px;
-   transition: all 1s ease-in-out;
+.name-con .name{
+    color: #ff014f;
 }
-
-
-.experience .experience-cards-container .experience-card:hover{
-    transform: translateY(-5px);
+.home .home-container .top-text .description{
+    font-size: 1.4rem;
+    text-align: justify;
 }
-.experience .experience-cards-container .experience-card .text-container .duration{
-    background:#ff014f;
-    margin-bottom: 1.5rem;
+.home .home-container .left-side .bottom-btns{
+    margin-bottom: 5rem;
 }
-.experience .experience-cards-container .contact-btn{
+.home .home-container .left-side .bottom-btns a{
     display: inline-block;
     text-decoration: none;
     text-transform: uppercase;
     color:#ff014f;
     font-size: 13px;
     font-weight: bold;
+    margin-right: 2rem;
     padding: 14px 25px;
     line-height: 21px;
     border-radius: 6px;
@@ -347,12 +324,63 @@ background-image: linear-gradient(315deg, #bf3a30 0%, #864ba2 74%);
                -5px -5px 15px #ffffff;
     transition: all 0.6s ease-in-out;
 }
-.experience .experience-cards-container .contact-btn:hover{
+.home .home-container .left-side .bottom-btns a:hover{
     transform: translateY(-6px);
-    background-color: #bf3a30;
- background-image: linear-gradient(315deg, #bf3a30 0%, #864ba2 74%);
-    color: var(--light);
+   background-color: #bf3a30;
+background-image: linear-gradient(315deg, #bf3a30 0%, #864ba2 74%);
+   color: var(--light);
 }
+
+/* ---//////---- Hero Styling End ---//////---- */
+
+
+
+
+
+/* ---//////---- Experience Styling Start ---//////---- */
+.features{
+    width: 100%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6.5rem;
+    padding: 10rem 0 4rem 0; */
+    padding-top: 7.5rem;
+    margin-top: 6rem;
+}
+.features .section-title-container p{
+    color: #ff014f;
+    font-size: 2rem;
+    font-weight: lighter;
+    margin-bottom: 0;
+}
+.features .section-title-container h1{
+    color: var(--dark);
+    font-size: 6rem;
+    font-weight: bold;
+}
+.features .work-cards .card{
+    padding: 6rem 2rem;
+ border-radius: 6px;
+    background:linear-gradient(145deg, #e2e8ec, #ffffff);
+    box-shadow:5px 5px 15px #D1D9E6, 
+               -5px -5px 15px #ffffff;
+transition: all 0.6s ease-in-out;
+}
+.features .work-cards .card:hover{
+    transform: translateY(-6px);
+   background-color: #bf3a30;
+background-image: linear-gradient(315deg, #bf3a30 0%, #864ba2 74%);
+   color: var(--light);
+}
+.features .work-cards .card img{
+    width: 3rem;
+}
+.features .work-cards .card p{
+    text-align: justify;
+}
+
+
 /* ---//////---- Experience Styling End ---//////---- */
 
 
@@ -466,7 +494,7 @@ background-image: linear-gradient(315deg, #bf3a30 0%, #864ba2 74%);
     display: block;
 }
 
-               /* ---- Portfolio Education Container styling Start----- */
+               /* ---- Resume Education Container styling Start----- */
                .resume .content .content-box .title p{
                 color: #ff014f;
                 font-size: 1.8rem;
@@ -502,6 +530,7 @@ background-image: linear-gradient(315deg, #bf3a30 0%, #864ba2 74%);
                 top: 50%;
                 left: -40px;
                }
+              
                .resume .content .box:hover{
             
                    background-color: #bf3a30;
@@ -917,7 +946,7 @@ background-image: linear-gradient(315deg, #bf3a30 0%, #864ba2 74%);
     justify-content: center;
     align-items: center;
     margin-top: 6.5rem;
-    padding: 10rem 0 4rem 0;
+    padding: 10rem 0 0 0;
     background:linear-gradient(145deg, #e2e8ec, #ffffff);
     box-shadow:5px 5px 15px #D1D9E6, 
                -5px -5px 15px #ffffff;

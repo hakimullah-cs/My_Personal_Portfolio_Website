@@ -116,6 +116,8 @@
 }
 
 
+
+
 @media screen and (max-width:768px) {
     /* --------------- Header Styling Start ---------------- */
     .header .navigation-bar{
@@ -139,15 +141,16 @@
         }
   
     /* --------------- Header Styling End ---------------- */
-    .hero .left-first-container .hero-section-descr h1{
-        font-size: 4rem;
+    .home .home-container .top-text .name-con{
+        font-size: 3rem;
         font-weight: bold;
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
     }
-    .hero{
-        
-        margin-top: 1rem;
-        padding-bottom: 3rem;
+    .name-con .name{
+        color: #ff014f;
+    }
+    .home .home-container .left-side .bottom-btns a{
+        margin-right: 1.5rem;
     }
     .experience .section-title-container h1{
         font-size: 4rem;
@@ -200,5 +203,6 @@
     .w-icon{
         display: none;
     }
+    
    
 }
